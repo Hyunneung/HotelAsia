@@ -36,8 +36,8 @@
 ## 사용기술
 - Back-end
   - Language : Java11, Oracle SQL
-  - Framework : Spring Boot, MyBatis
-  - Was : Apache Tomcat
+  - Framework : Spring Boot, Spring Security, MyBatis
+  - Was : Apache Tomcat 9.0
 - Front-end
   - JSP, JavaScript(jQuery, Ajax), HTML, CSS, Bootstrap5
 - API

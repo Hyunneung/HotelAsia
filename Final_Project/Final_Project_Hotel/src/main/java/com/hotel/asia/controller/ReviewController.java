@@ -53,7 +53,7 @@ public class ReviewController {
 	@Autowired
 	private MemberService memberService;
 	
-	
+	//cloneTest
 	// 리뷰 게시판 이동
 	@RequestMapping(value="/reviewList")
 	public ModelAndView reviewList(@RequestParam(value="page", defaultValue="1", required=false) int page, // 페이지

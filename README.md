@@ -29,14 +29,14 @@
 ## 개발환경
 * OS : Window10, Mac OS
 * DBMS : Oracle 11g
-* Editer : Eclipse
-* Database : SQL Developer
-* Team Collaboration Tool : GitHub, Gather, GoogleDocs, Microsoft 365
+* Editer : Eclipse, SQL Developer
+* Team Collaboration Tool : GitHub, Gather, GoogleDocs
 
 ---
 ## 사용기술
 - Back-end
-  - Language : Java11, Oracle SQL (수정수정수정)
+  - Language : Java11, Oracle SQL
+  - Framework : Spring Boot, MyBatis
   - Was : Apache Tomcat
 - Front-end
   - JSP, JavaScript(jQuery, Ajax), HTML, CSS, Bootstrap5

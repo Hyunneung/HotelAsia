@@ -18,11 +18,4 @@
 	</insert>
 	
 	
-	<!-- *****결제취소***** -->
-	<!-- 예약번호 구하기 -->
-	<select id="getRezId" parameterType="String" resultType="int">
-		select REZ_ID
-		from   PAYMENT
-		where  PAYMENT_ID = #{PAYMENT_ID}
-	</select>
 </mapper>

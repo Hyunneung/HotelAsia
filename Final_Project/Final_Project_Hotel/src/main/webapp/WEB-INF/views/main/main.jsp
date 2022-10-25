@@ -18,8 +18,7 @@
         <!--================Banner Area =================-->
         <section class="banner_area" >
             <div class="booking_table d_flex align-items-center" style="min-height:600px">
-                <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
-                    data-background=""></div>
+                <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"></div>
                 <div class="container">
                     <div class="banner_content text-center" style="margin-bottom:0px;">
                         <h6>Inspiring Senses & Touching place </h6>
@@ -37,8 +36,8 @@
                     <p>편리하고 안락한 공간설계의 객실로 긴 여행의 피로에 지친 고객의 편안한 휴식공간을 제공합니다.</p>
                 </div>
                 
-                <%-- 상품이 있는 경우--%>
-               	<c:if test="${roomListCount > 0 }">
+                <%-- 객실이 있는 경우--%>
+               	<c:if test="${roomListCount > 0}">
               	 	<div class="row" style="margin-bottom:30px">
                		<c:forEach var="i" items="${roomList}">
                			
@@ -48,11 +47,10 @@
 		                                <img src="${i.ROOM_IMG}" alt="객실이미지" style="width:-webkit-fill-available; height:270px">
 		                                <a href="room/roomDetail?num=${i.ROOM_ID}" class="btn theme_btn button_hover">상세보기</a>
 		                            </div>
-		                            <a href="room/roomDetail?num=${i.ROOM_ID}">
-		                                <h4 class="sec_h4">${i.ROOM_TYPE}</h4>
-		                            </a>
-		                              <h5><small>KRW</small> <fmt:formatNumber value="${i.ROOM_PRICE }" pattern="#,###"/> </h5>
-		                              
+		                            <h4 class="sec_h4">
+		                            	<a href="room/roomDetail?num=${i.ROOM_ID}" style="color:black">${i.ROOM_TYPE}</a>
+		                            </h4>
+		                            <h5><small>KRW</small> <fmt:formatNumber value="${i.ROOM_PRICE}" pattern="#,###"/> </h5>
 		                        </div>
 		                    </div>
                			
@@ -60,9 +58,9 @@
                		</div>
                		
                	</c:if>
-               <%-- 상품이 없는 경우--%>
-			   <c:if test="${roomListCount == 0 }">
-			   		<font size=5>등록된 글이 없습니다.</font>
+               <%-- 객실이 없는 경우--%>
+			   <c:if test="${roomListCount == 0}">
+			   		<font size=5>등록된 객실이 없습니다.</font>
 			   </c:if>
                 
                 <!-- ===========location ============ -->
@@ -91,17 +89,14 @@
         <script src="${pageContext.request.contextPath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/mail-script.js"></script>
-        <script
-            src="${pageContext.request.contextPath}/resources/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-        <script
-            src="${pageContext.request.contextPath}/resources/vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/vendors/nice-select/js/jquery.nice-select.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/mail-script.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/stellar.js"></script>
         <script src="${pageContext.request.contextPath}/resources/vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
         
-         <script type="text/javascript"
-		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3f03395b98826ec7d28d1ea88ef247e1&libraries=services"></script>
+         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3f03395b98826ec7d28d1ea88ef247e1&libraries=services"></script>
    
 		<script>
 		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스

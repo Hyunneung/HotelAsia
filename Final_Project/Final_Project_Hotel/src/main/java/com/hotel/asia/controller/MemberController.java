@@ -29,7 +29,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.hotel.asia.dto.MailVO;
 import com.hotel.asia.dto.Member;
-import com.hotel.asia.dto.Notice;
 import com.hotel.asia.service.MemberService;
 import com.hotel.asia.task.NaverMessageAuth;
 import com.hotel.asia.task.SendMail;

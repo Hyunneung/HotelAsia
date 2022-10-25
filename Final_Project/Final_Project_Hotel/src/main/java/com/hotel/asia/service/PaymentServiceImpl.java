@@ -17,11 +17,4 @@ public class PaymentServiceImpl implements PaymentService{
 		return mapper.payment(pm);
 	}
 	
-	
-	// *****결제취소*****
-	// 예약번호 구하기
-	@Override
-	public int getRezId(String merchant_uid) {
-		return mapper.getRezId(merchant_uid);
-	}
 }

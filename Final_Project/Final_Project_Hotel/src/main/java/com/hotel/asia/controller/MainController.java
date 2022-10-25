@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hotel.asia.dto.Room;
-import com.hotel.asia.service.RezService;
 import com.hotel.asia.service.RoomService;
 
 @Controller

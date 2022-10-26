@@ -168,7 +168,7 @@
   - Bootstrap 모달, JDBC 활용해 글 등록 시 입력받은 비밀번호 일치 여부 확인 후 일치할 경우 삭제
   
 ##### 2-6-1-2 작성자가 아닌 경우
-![image](https://user-images.githubusercontent.com/104151569/197403081-5f5f7b7f-0d07-4c7c-9dae-5f626a310901.png)
+![image](https://user-images.githubusercontent.com/104151569/198048956-c28b5e47-41dd-41e3-b66e-d894581975e0.png)
   - JSTL core 라이브러리 활용해 해당 게시글 작성자가 아닌 경우 ‘추천’ 또는 '추천해제' 버튼 표시
   - JDBC 활용해 기존 추천 이력이 없는 경우 '추천' 버튼 표시, 추천 이력이 있는 경우 '추천 해제' 버튼 표시
   - Ajax, JDBC 활용해 '추천' 또는 '추천해제' 버튼 클릭 시 추천수 산정 및 출력
